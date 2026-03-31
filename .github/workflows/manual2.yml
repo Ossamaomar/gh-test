@@ -1,0 +1,11 @@
+name: Manual repository WF
+
+on:
+    repository_dispatch: 
+        types: [incident_report]
+jobs:
+    handle-incident:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print incident rules
+              run: echo "Incident reported"
