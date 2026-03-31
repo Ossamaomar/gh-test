@@ -1,9 +1,5 @@
-function greet(name) {
+function app(name) {
   return `Hello, ${name}`;
 }
 
-module.exports = greet;
-
-if (require.main === module) {
-  console.log(greet("Osama"));
-}
+module.exports = app;
